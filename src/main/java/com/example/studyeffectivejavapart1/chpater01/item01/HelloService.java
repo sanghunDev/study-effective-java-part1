@@ -12,11 +12,13 @@ public interface HelloService {
         }
     }
 
+    // java 8
     static String hi() {
         prepareMessage();
         return "hi";
     }
 
+    // java 9 (인터페이스 내부 공통적인 작업을 public 으로 노출하고 싶지 않은 경우 사용)
     static private void prepareMessage() {
     }
 
