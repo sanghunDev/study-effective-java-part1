@@ -1,4 +1,4 @@
-package com.example.studyeffectivejavapart1.chpater01.item01;
+package com.example.studyeffectivejavapart1.chpater01.item01.code;
 
 /**
  * 생성자로는 인스턴스의 제공을 컨트롤 할 수 없지만

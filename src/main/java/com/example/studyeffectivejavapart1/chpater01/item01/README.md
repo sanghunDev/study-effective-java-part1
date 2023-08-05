@@ -8,7 +8,7 @@
 * Map 이나 Set 을 구현 시 키값이 Enum 타입이라면 EnumMap 이나 EnumSet 을 사용하는게 성능적으로 유리하다
 
 ### 플라이웨이트 패턴
-![img.png](img.png)
+![img.png](img/img.png)
 * 객체를 재사용하는 방법 중 하나
 * 객체를 가볍게 만들어서 메모리 사용을 줄이는 패턴이다
 * 자주 변하는 속성과 변하지 않는 속성을 분리하고 재사용하여 메모리 사용을 줄인다
@@ -40,7 +40,7 @@
       * 서비스를 추상화 함으로써 개발자가 실제 구현을 알지 못해도 해당 기능을 사용 가능
       * 해당 추상화 계층을 구현하는 또 다른 서비스로 쉽게 교체가 가능함
       * @Transactional, @Cacheable 등...
-      * ![img_1.png](img_1.png)
+      * ![img_1.png](img/img_1.png)
   * 의존 객체 주입 프레임워크
   * java.util.ServiceLoader
 

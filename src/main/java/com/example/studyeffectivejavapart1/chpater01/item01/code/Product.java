@@ -1,7 +1,6 @@
-package com.example.studyeffectivejavapart1.chpater01.item01;
+package com.example.studyeffectivejavapart1.chpater01.item01.code;
 
 import java.util.EnumSet;
-import java.util.Set;
 
 public class Product {
 
