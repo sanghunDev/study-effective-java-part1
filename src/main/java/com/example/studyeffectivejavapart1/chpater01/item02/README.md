@@ -52,3 +52,17 @@
 * 복잡한 객체를 만드는 프로세스를 독립적으로 분리할 수 있다
 * ![img.png](img/img.png)
 * 계층구조를 빌더로 만들때는 self 를 제네릭으로 구현해서 자기를 반환시키면 타입캐스팅이 필요없게 된다
+
+### IllegalArgumentException
+* 잘못된 인자를 넘겨 받았을 때 사용할 수 있는 기본 런타임 예외
+* checked exception
+  * RuntimeException 의 하위 클래스가 아닌 Exception 의 하위 클래스 
+  * 예외가 발생했을때 예외처리를 무조건 해줘야 한다
+    * 예외 처리를 강제한다
+  * 어떤 예외가 발생한 경우 해당 예외에 대한 작업을 강제하는 경우 사용한다
+* unchecked exception
+  * RuntimeException 의 하위 클래스 
+  * 예외가 발생했을때 반드시 예외 처리를 하지 않아도 괜찮다
+    * 실행 중 발생할 수 있는 예외로 예외 처리를 강제하지 않는다
+  * 일반적으로 실행시 예외를 처리할 수 있는 경우에는 RuntimeException 을 확장해서 사용하는게 편리하다
+  * 명시적으로 해당 예외가 발생할 수 있다고 알려주는 경우에는 메소드 선언부에 uncheckedException 도 해당 타입을 선언한다 
