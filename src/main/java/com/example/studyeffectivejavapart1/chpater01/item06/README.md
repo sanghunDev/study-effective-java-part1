@@ -19,3 +19,15 @@
   * 컴파일시 경고 메세지를 통해 사용 자제를 권장하는 API 라는 것을 클라이언트에게 알려줄 수 있다
 * @deprecated
   * 문서화(java doc)에 사용하며 왜 해당 API 를 사용 자제를 권장하는지, 권장하는 API 가 어떤 것인지 알려 줄 수 있다
+
+### 내부적으로 정규 표현식이 사용되는곳
+* 내부적으로 Pattern 이 쓰이는 메서드는 사용을 주의하자
+  * String.matches(String regex)
+  * String.split(String regex)
+    * 대안 -> Pattern.compile(regex).split(str)
+    * 한글자로 찾는것은 빠르기 때문에 미리 컴파일해서 사용하지 않아도 괜찮다
+      * String.split(",") 이런 경우는 OK 
+      * String.split(",,,") 이런 경우는 패턴을 만드는게 더 효율적이다 
+  * String.replace*(String regex, String replacement)
+    * 대안 -> Pattern.compile(regex).matcher(str).replaceAll(repl)
+
