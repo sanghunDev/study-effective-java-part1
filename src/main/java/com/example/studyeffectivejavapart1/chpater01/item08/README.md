@@ -22,3 +22,15 @@
 * 방어하는 방법
   * final 클래스로 생성
   * finalizer() 메소드를 오버라이딩 후 final 을 붙여서 하위 클래스에서 오버라이딩을 막는다
+
+### AutoClosable
+* try-with-resource 를 지원하는 인터페이스
+* void close() throws Exception
+  * 인터페이스에 정의된 메서드에서 Exception 타입으로 예외를 던진다
+    * 실제 구현체에서는 구체적인 예외를 던지는것을 추천한다
+  * 가능하다면 예외도 던지지 않는 방법도 좋다
+    * 예외를 던지지 않고 해당 메서드 안에서 처리
+* Closeable 클래스와 차이점
+  * IOException 을 던진다
+  * 가급적이면 몇번을 실행해도 상관 없이 같은 결과가 반환되어야 한다
+    * 멱등성(idempotent)을 지키면 좋다
