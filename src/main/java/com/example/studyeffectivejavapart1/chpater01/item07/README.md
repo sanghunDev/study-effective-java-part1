@@ -17,3 +17,12 @@
   * 약한 참조 (weak reference)
 * 백그라운드 쓰레드
   * ScheduledThreadPoolExecutor
+
+### NullPointerException
+* java8 의 Optional 을 활용해서 최대한 NPE 를 피하자
+* NPE 가 발생하는 이유
+  * 메소드에서 null 을 리턴하거나 null 체크를 하지 않았기 때문
+* 메소드에서 적절한 값을 리턴할 수 없는 경우에 선택할 수 있는 방법
+  * 예외를 던진다
+  * null 을 리턴한다
+  * Optional 을 리턴한다
