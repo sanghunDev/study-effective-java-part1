@@ -10,3 +10,10 @@
   * WeakHashMap 등 적절한 자료구조를 사용
   * 가장 오래된 객체를 할당 해제 하도록 직접 구현
   * 백그라운드의 쓰레드를 사용해서 주기적으로 클린업을 사용
+
+## 완벽 공략
+* NullPointerException
+* WeakHashMap
+  * 약한 참조 (weak reference)
+* 백그라운드 쓰레드
+  * ScheduledThreadPoolExecutor
