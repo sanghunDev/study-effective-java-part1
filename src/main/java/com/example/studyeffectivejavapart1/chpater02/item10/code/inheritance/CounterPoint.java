@@ -1,7 +1,7 @@
 package com.example.studyeffectivejavapart1.chpater02.item10.code.inheritance;
 
 
-import me.whiteship.chapter02.item10.Point;
+import com.example.studyeffectivejavapart1.chpater02.item10.code.Point;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
